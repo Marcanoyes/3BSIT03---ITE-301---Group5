@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/layout_note"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/note_layout_view"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:id="@+id/noteLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/delete"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remTitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Title here"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/robotocondensed_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorSubtitleText"
+            android:textSize="20sp"
+            android:maxHeight="20dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/titletLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:paddingTop="1dp"
+            >
+
+            <TextView
+                android:id="@+id/remtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/robotocondensed_regular"
+                android:includeFontPadding="false"
+                android:text="time and date here"
+                android:textColor="@color/colorSubtitleText"
+                android:textSize="15sp"
+                android:maxHeight="20dp"
+                />
+            <TextView
+                android:id="@+id/remdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/robotocondensed_regular"
+                android:includeFontPadding="false"
+                android:text="time and date here"
+                android:textColor="@color/colorSubtitleText"
+                android:textSize="15sp"
+                android:maxHeight="20dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_reminder"
+        app:tint="@color/colorIcon"
+        android:layout_marginEnd="15sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

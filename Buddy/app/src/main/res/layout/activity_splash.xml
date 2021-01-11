@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color"
+    tools:context=".SplashScreen.Splash">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorfont"
+        android:text="HOMELEARNING BUDDY"
+        android:textSize="20dp"
+        android:fontFamily="@font/robotocondensed_bold"
+        android:layout_above="@+id/upanglogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp" />
+
+
+    <LinearLayout
+        android:id="@+id/upanglogo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/cas_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cas"
+            />
+
+        <ImageView
+            android:id="@+id/cite_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/cite" />
+
+        <ImageView
+            android:id="@+id/chs_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/chs" />
+
+        <ImageView
+            android:id="@+id/cma_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/cma" />
+
+        <ImageView
+            android:id="@+id/cea_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/cea" />
+
+        <ImageView
+            android:id="@+id/css_logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/css" />
+    </LinearLayout>
+</RelativeLayout>

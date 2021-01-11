@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/default_color"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Buddy.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/default_color"
+            app:popupTheme="@style/Theme.Buddy.PopupOverlay" />
+
+        <!--Container-->
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/default_color">
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@drawable/search_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_search_icon"
+                    app:tint="@color/colorIcon" />
+
+                <EditText
+                    android:id="@+id/search_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@null"
+                    android:fontFamily="@font/robotocondensed_light"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Search text"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notesRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/search_layout"
+                android:layout_above="@+id/miscbutton"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:clipToPadding="false"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp" />
+
+            <LinearLayout
+                android:id="@+id/miscbutton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorActionBg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_addbutton"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    app:srcCompat="@drawable/ic_add_button"-->
+<!--                    app:tint="@color/colorIcon" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_imgbutton"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    app:srcCompat="@drawable/ic_image"-->
+<!--                    app:tint="@color/colorIcon"/>-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_linkbutton"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    app:srcCompat="@drawable/ic_link"-->
+<!--                    app:tint="@color/colorIcon"/>-->
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_addnotes"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@id/miscbutton"
+                android:layout_marginTop="-30dp"
+                android:src="@drawable/ic_addnotes"
+                android:layout_alignRight="@id/search_layout"
+                app:tint="@color/colorIcon"
+                android:background="@drawable/addnotegb"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/default_color"
+    tools:showIn="@layout/activity_details_rem"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titlecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/default_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+        <EditText
+            android:id="@+id/remindertitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Title"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.006" />
+
+    </LinearLayout>
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/date_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginBottom="-40dp"-->
+    <!--        android:background="#444"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:paddingStart="10dp"-->
+    <!--        android:paddingEnd="10dp"-->
+    <!--        android:onClick="setDate"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/titlecontainer"-->
+    <!--        app:layout_constraintVertical_bias="0.006">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/img_date"-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:src="@drawable/ic_date"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            app:tint="@color/colorIcon" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_toRightOf="@id/img_date"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Date"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:maxWidth="150dp"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:textColor="@color/colorWhite"-->
+    <!--                />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text=" "-->
+    <!--                android:maxWidth="150dp"-->
+    <!--                android:textSize="10dp"-->
+    <!--                android:textColor="@color/colorWhite"-->
+    <!--                />-->
+    <!--        </LinearLayout>-->
+
+
+
+    <!--    </RelativeLayout>-->
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/time_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginBottom="-40dp"-->
+    <!--        android:background="#444"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:paddingStart="10dp"-->
+    <!--        android:paddingEnd="10dp"-->
+    <!--        android:onClick="setDate"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/date_layout"-->
+    <!--        app:layout_constraintVertical_bias="0.006">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/img_time"-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:src="@drawable/ic_time"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            app:tint="@color/colorIcon" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_toRightOf="@id/img_time"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Time"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:maxWidth="150dp"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:textColor="@color/colorWhite"-->
+    <!--                />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text=" "-->
+    <!--                android:maxWidth="150dp"-->
+    <!--                android:textSize="10dp"-->
+    <!--                android:textColor="@color/colorWhite"-->
+    <!--                />-->
+    <!--        </LinearLayout>-->
+
+
+
+    <!--    </RelativeLayout>-->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_time"
+        android:text="Select Time"
+        android:textAllCaps="false"
+        android:background="@color/colorIcon"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Select date"
+        android:textAllCaps="false"
+
+        android:background="@color/colorIcon"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_date"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_done"
+        android:textColor="@color/colorWhite"
+        android:text="Done"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_delete"
+        android:textColor="@color/colorWhite"
+        android:text="Delete"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</LinearLayout>

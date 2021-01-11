@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color"
+    tools:context=".Login.Login">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/stud_username"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logintext"
+        android:drawableLeft="@drawable/ic_users"
+        android:ems="10"
+        android:hint="e.g. xxxx.xxxx@up.edu.phinma.ph"
+        android:textColorHint="@color/colorTextHint"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/stud_pass"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotocondensed_light"
+        />
+
+    <EditText
+        android:id="@+id/stud_pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logintext"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorTextHint"
+        android:inputType="textPassword"
+        android:layout_marginBottom="130dp"
+        android:layout_alignBottom="@+id/login_button"
+        android:layout_alignLeft="@+id/stud_username"
+        android:layout_alignStart="@+id/stud_username"
+        android:fontFamily="@font/robotocondensed_light"
+        />
+
+
+    <TextView
+        android:id="@+id/createacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stud_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Create Account"
+        android:textColor="@color/colorWhite" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/colorLogin"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:id="@+id/login_button"
+        android:layout_marginBottom="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:fontFamily="@font/robotocondensed_regular"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

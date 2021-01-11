@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "896088016482",
+    "firebase_url": "https://homelearning-fbdbf.firebaseio.com",
+    "project_id": "homelearning-fbdbf",
+    "storage_bucket": "homelearning-fbdbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896088016482:android:ec74a448a96587073bf33b",
+        "android_client_info": {
+          "package_name": "com.example.buddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896088016482-4d6rv1tq20sjgs3cd3h9hql1t18ejab0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_gNObyHxPhL8KNiRQIUlKRFVsNHYmA28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896088016482-4d6rv1tq20sjgs3cd3h9hql1t18ejab0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896088016482:android:615e6e2a701c604b3bf33b",
+        "android_client_info": {
+          "package_name": "com.example.homelearningbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896088016482-4d6rv1tq20sjgs3cd3h9hql1t18ejab0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_gNObyHxPhL8KNiRQIUlKRFVsNHYmA28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896088016482-4d6rv1tq20sjgs3cd3h9hql1t18ejab0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_note"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/note_layout_view"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:id="@+id/noteLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteTitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Title here"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/robotocondensed_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorSubtitleText"
+            android:textSize="20sp"
+            android:maxHeight="20dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/titletLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:paddingTop="1dp"
+            >
+            <TextView
+                android:id="@+id/notecontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/robotocondensed_regular"
+                android:includeFontPadding="false"
+                android:text="Notes here"
+                android:textColor="@color/colorSubtitleText"
+                android:textSize="15sp"
+                android:maxHeight="200dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

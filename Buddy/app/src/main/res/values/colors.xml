@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorOpacity">#08FFFFFF</color>
+    <color name="colorRed">#ff1500</color>
+
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="default_color">#222222</color>
+    <color name="noteview">#444444</color>
+
+    <color name="colorUser">#555555</color>
+    <color name="colorLogin">#FF03DAC5</color>
+    <color name="colorfont">#b2b2b2</color>
+    <color name="colorSubtitleText">#cccccc</color>
+    <color name="colorTextHint">#b2b2b2</color>
+    <color name="colorMisc">#191919</color>
+    <color name="colorDelete">#ff1500</color>
+    <color name="colorIcon">#aaaaaa</color>
+
+    <color name="colorSearchBackground">#666666</color>
+    <color name="colorActionBg">#454545</color>
+
+
+    <color name="colorNote">#FFBB86FC</color>
+    <color name="colorNote2">#FF6200EE</color>
+    <color name="colorNote3">#FF3700B3</color>
+    <color name="colorNote4">#FF03DAC5</color>
+    <color name="colorNote5">#FF018786</color>
+</resources>
